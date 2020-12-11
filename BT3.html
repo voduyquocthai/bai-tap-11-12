@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hãy nhập số của bạn</p>
+    <p id="yournumber"></p>
+</body>
+    <script>
+        function KeyPressed(evt) {
+            let message
+            if (evt.keyCode>=48&&evt.keyCode<=57) {
+            message = evt.key
+            } else {
+                message = 'Phím bạn nhập không phải là số'
+            }
+        document.getElementById('yournumber').innerHTML = message
+        }
+        document.addEventListener('keypress', KeyPressed)   
+    </script>
+</html>
