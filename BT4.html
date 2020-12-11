@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cách nào khai báo một biến và gán giá trị số nguyên là đúng trong các câu lệnh sau?</h3>
+    <form>
+    <label><input onclick="Checking(id)" id="name1" name="name" value="dapanA" type="radio"/>a. var 1x=10</label> <br/>
+    <label><input onclick="Checking(id)" id="name2" name="name" value="dapanB" type="radio"/>b. var x=10</label> <br/>
+    <label><input onclick="Checking(id)" id="name3" name="name" value="dapanC" type="radio"/>c. var x=10.0f</label> <br/>
+    <label><input onclick="Checking(id)" id="name4" name="name" value="dapanD" type="radio"/>d. var x="10"</label>
+    </form>
+    <p id="traloi"></p>
+</body>
+<script>
+    function Checking(id) {
+        if (id == "name3") {
+            document.getElementById("traloi").innerHTML = 'Câu trả lời đúng'
+        } else {
+            document.getElementById("traloi").innerHTML = 'Câu trả lời sai'
+        }
+    }
+</script>
+</html>
